@@ -1,0 +1,26 @@
+.card-img-top {
+  max-width: 100%;
+  height: auto;
+}
+
+.btn-link {
+  font-size: 14px;
+}
+
+.btn {
+  background-color: #fff !important;
+  color: black !important;
+  border: none !important;
+}
+@media (max-width: 576px) {
+  .ml-3 {
+    margin-left: 0;
+  }
+  .mr-2 {
+    margin-right: 0;
+  }
+  .card-img-top {
+    max-height: 200px;
+    object-fit: cover;
+  }
+}

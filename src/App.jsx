@@ -15,6 +15,8 @@ import Photos from "./components/photos/Photos";
 import Intro from "./components/intro/Intro";
 import Featured from "./components/Featured/Featured";
 
+import PostList from "./components/PostList/PostList";
+
 function App() {
   return (
     <>
@@ -88,12 +90,8 @@ function App() {
               {/* photos section end */}
             </Col>
             <Col md={6}>
-              <Card>
-                <Card.Body>
-                  <Card.Title>Posts</Card.Title>
-                  <Card.Text>Posts section content...</Card.Text>
-                </Card.Body>
-              </Card>
+              {/* posts */}
+              <PostList />
             </Col>
           </Row>
         </Container>
