@@ -13,6 +13,7 @@ import Header from "./components/Header/Header";
 import "./App.css";
 import Photos from "./components/photos/Photos";
 import Intro from "./components/intro/Intro";
+import Featured from "./components/Featured/Featured";
 
 function App() {
   return (
@@ -76,18 +77,7 @@ function App() {
             </Col>
             <Col md={6}>
               {/* featured start */}
-              <Card>
-                <Card.Body>
-                  <Card.Title>Featured</Card.Title>
-                  <Card.Text>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Adipisci aut exercitationem laudantium? Consectetur, ipsa
-                    quibusdam vitae officia laboriosam corrupti pariatur
-                    excepturi adipisci possimus neque laborum eaque harum non
-                    atque in?
-                  </Card.Text>
-                </Card.Body>
-              </Card>
+              <Featured />
               {/* featured end */}
             </Col>
           </Row>

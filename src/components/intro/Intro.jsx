@@ -16,6 +16,13 @@ const Intro = () => {
 
           <ListGroup variant="flush">
             <ListGroup.Item>
+              <i class="fa-solid fa-circle-exclamation"></i>
+              <span>
+                <strong>Page </strong>
+                Software company
+              </span>
+            </ListGroup.Item>
+            <ListGroup.Item>
               <i className="fas fa-map-marker-alt"></i>
               <span>
                 No 310/1/1, Kaduwela Road, Koswatte Junction, Battaramulla, Sri
