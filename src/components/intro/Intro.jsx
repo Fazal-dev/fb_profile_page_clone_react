@@ -6,7 +6,9 @@ const Intro = () => {
   return (
     <Card>
       <Card.Body>
-        <Card.Title>Intro</Card.Title>
+        <Card.Title>
+          <strong>Intro</strong>
+        </Card.Title>
         <Card.Text>
           <p className="higlight-text">
             We are a boutique digital transformation consultancy and software

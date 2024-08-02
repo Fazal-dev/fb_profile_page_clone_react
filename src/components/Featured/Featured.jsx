@@ -1,21 +1,21 @@
 import React from "react";
-import { Card, Row, Col } from "react-bootstrap";
+import { Card, Row, Col, Image } from "react-bootstrap";
 
 const Featured = () => {
   const features = [
     {
-      image: "https://via.placeholder.com/150",
-      title: "Feature 1",
+      image: "https://via.placeholder.com/600x400",
+      profilePicture: "https://via.placeholder.com/50",
       date: "2024-08-02",
       profileName: "John Doe",
-      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      description: "Lorem ipsum dolor sit amet consectetur ",
     },
     {
-      image: "https://via.placeholder.com/150", // Example image URL
-      title: "Feature 2",
+      image: "https://via.placeholder.com/600x400",
+      profilePicture: "https://via.placeholder.com/50",
       date: "2024-08-02",
       profileName: "Jane Smith",
-      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. ",
+      description: "Lorem ipsum dolor sit amet consectetur ",
     },
   ];
 
@@ -23,19 +23,31 @@ const Featured = () => {
     <>
       <Card>
         <Card.Body>
-          <Card.Title>Featured</Card.Title>
+          <Card.Title>
+            <strong>Featured</strong>
+          </Card.Title>
           <Row>
             {features.map((feature, index) => (
-              <Col xs={12} md={6} sm={6} lg={6} key={index} className="mb-4">
+              <Col xs={12} md={6} key={index} className="mb-4">
                 <Card>
                   <Card.Body>
-                    <Card.Title>{feature.title}</Card.Title>
-                    <Card.Text>{feature.description}</Card.Text>
-                    <Card.Subtitle className="mb-2 text-muted">
-                      {feature.date} - {feature.profileName}
-                    </Card.Subtitle>
+                    <Row>
+                      <Col xs={3} className="text-center">
+                        <Image
+                          src={feature.profilePicture}
+                          roundedCircle
+                          fluid
+                        />
+                      </Col>
+                      <Col xs={9}>
+                        <Card.Text className="mb-1 ">
+                          {feature.date} - {feature.profileName}
+                        </Card.Text>
+                        <Card.Text>{feature.description}</Card.Text>
+                      </Col>
+                    </Row>
                   </Card.Body>
-                  <Card.Img variant="top" src={feature.image} />
+                  <Card.Img variant="bottom" src={feature.image} />
                 </Card>
               </Col>
             ))}
