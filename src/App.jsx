@@ -12,6 +12,7 @@ import {
 import Header from "./components/Header/Header";
 import "./App.css";
 import Photos from "./components/photos/Photos";
+import Intro from "./components/intro/Intro";
 
 function App() {
   return (
@@ -65,53 +66,47 @@ function App() {
           </Navbar.Collapse>
         </Navbar>
         {/* navigation tab end */}
-        <Row className="mt-4">
-          <Col md={6}>
-            {/* intro start */}
-            <Card>
-              <Card.Body>
-                <Card.Title>Intro</Card.Title>
-                <Card.Text>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Delectus maxime fugiat quis vitae asperiores, iste suscipit.
-                  Inventore quo error, nam impedit officia totam consequuntur
-                  fugit, laboriosam neque corporis, laborum quas.
-                </Card.Text>
-              </Card.Body>
-            </Card>
-            {/* intro start */}
-          </Col>
-          <Col md={6}>
-            {/* featured start */}
-            <Card>
-              <Card.Body>
-                <Card.Title>Featured</Card.Title>
-                <Card.Text>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Adipisci aut exercitationem laudantium? Consectetur, ipsa
-                  quibusdam vitae officia laboriosam corrupti pariatur excepturi
-                  adipisci possimus neque laborum eaque harum non atque in?
-                </Card.Text>
-              </Card.Body>
-            </Card>
-            {/* featured end */}
-          </Col>
-        </Row>
-        <Row className="mt-4">
-          <Col md={6}>
-            {/* photos section start */}
-            <Photos />
-            {/* photos section end */}
-          </Col>
-          <Col md={6}>
-            <Card>
-              <Card.Body>
-                <Card.Title>Posts</Card.Title>
-                <Card.Text>Posts section content...</Card.Text>
-              </Card.Body>
-            </Card>
-          </Col>
-        </Row>
+
+        <Container>
+          <Row className="mt-4 justify-content-center">
+            <Col md={6}>
+              {/* intro start */}
+              <Intro />
+              {/* intro start */}
+            </Col>
+            <Col md={6}>
+              {/* featured start */}
+              <Card>
+                <Card.Body>
+                  <Card.Title>Featured</Card.Title>
+                  <Card.Text>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Adipisci aut exercitationem laudantium? Consectetur, ipsa
+                    quibusdam vitae officia laboriosam corrupti pariatur
+                    excepturi adipisci possimus neque laborum eaque harum non
+                    atque in?
+                  </Card.Text>
+                </Card.Body>
+              </Card>
+              {/* featured end */}
+            </Col>
+          </Row>
+          <Row className=" justify-content-center mt-4">
+            <Col md={6}>
+              {/* photos section start */}
+              <Photos />
+              {/* photos section end */}
+            </Col>
+            <Col md={6}>
+              <Card>
+                <Card.Body>
+                  <Card.Title>Posts</Card.Title>
+                  <Card.Text>Posts section content...</Card.Text>
+                </Card.Body>
+              </Card>
+            </Col>
+          </Row>
+        </Container>
       </Container>
     </>
   );
