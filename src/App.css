@@ -1,0 +1,23 @@
+.cover-img-wrapper img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+.profile-section {
+  padding: 20px;
+  text-align: center;
+}
+
+.profile-section h1 {
+  margin-bottom: 20px;
+}
+
+.nav-tab {
+  margin-top: 20px;
+}
+
+.main-body .row-one,
+.main-body .row-two {
+  margin-top: 20px;
+}
