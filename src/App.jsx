@@ -25,15 +25,14 @@ function App() {
             <Row className="align-items-center">
               <Col xs={4} md={2}></Col>
               <Col xs={8} md={10}>
-                <div className="profile">
-                  <Image
-                    width={150}
-                    height={150}
-                    src="./profile.jpg"
-                    roundedCircle
-                    fluid
-                  />
-                </div>
+                <Image
+                  className="profile"
+                  width={150}
+                  height={150}
+                  src="./profile.jpg"
+                  roundedCircle
+                  fluid
+                />
                 <Profile />
               </Col>
             </Row>

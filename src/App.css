@@ -14,8 +14,9 @@
   left: 30%;
   transform: translateX(-50%);
   z-index: 1;
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
+  border: 3px solid rgb(215, 212, 212);
 }
 .profile-section h1 {
   margin-bottom: 20px;
