@@ -5,7 +5,11 @@ import "./header.css";
 const Header = () => {
   return (
     <>
-      <Navbar expand="lg" className="bg-body-tertiary main-container">
+      <Navbar
+        fixed="top"
+        expand="lg"
+        className="bg-body-tertiary  main-container"
+      >
         <Container>
           <Navbar.Brand href="#home">
             <img

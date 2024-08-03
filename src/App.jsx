@@ -13,7 +13,7 @@ function App() {
   return (
     <>
       <Header />
-      <Container>
+      <Container className="mt-5">
         <Row className="justify-content-center w-full">
           <Col xs={12} md={8} className="text-center">
             <Image src="./cover.jpg" fluid />

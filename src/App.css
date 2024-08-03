@@ -10,7 +10,7 @@
 }
 .profile {
   position: absolute;
-  top: 600px;
+  top: 590px;
   left: 30%;
   transform: translateX(-50%);
   z-index: 1;
