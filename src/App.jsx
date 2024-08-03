@@ -1,13 +1,13 @@
 import React from "react";
-import { Container, Row, Col, Button, Card, Image } from "react-bootstrap";
+import { Container, Row, Col, Card, Image } from "react-bootstrap";
 import Header from "./components/Header/Header";
 import "./App.css";
 import Photos from "./components/photos/Photos";
 import Intro from "./components/intro/Intro";
 import Featured from "./components/Featured/Featured";
-
 import PostList from "./components/PostList/PostList";
 import Nav_tab from "./components/nav_tab/Nav_tab";
+import Profile from "./components/Profile/Profile";
 
 function App() {
   return (
@@ -19,34 +19,24 @@ function App() {
             <Image src="./cover.jpg" fluid />
           </Col>
         </Row>
+
         <Row className="justify-content-center mt-4">
           <Col xs={12} md={8}>
-            <Card>
-              <Card.Body>
-                <Row className="align-items-center">
-                  <Col xs={4} md={2}>
-                    <Image
-                      width={80}
-                      height={80}
-                      src="./profile.jpg"
-                      roundedCircle
-                      fluid
-                    />
-                  </Col>
-                  <Col xs={8} md={10}>
-                    <h3>Softmint Software Solutions </h3>
-                    <p>Likes: 100</p>
-                    <Button variant="primary" className="mr-2">
-                      WhatsApp
-                    </Button>
-                    <Button variant="primary" className="mr-2">
-                      Message
-                    </Button>
-                    <Button variant="outline-primary">Like</Button>
-                  </Col>
-                </Row>
-              </Card.Body>
-            </Card>
+            <Row className="align-items-center">
+              <Col xs={4} md={2}></Col>
+              <Col xs={8} md={10}>
+                <div className="profile">
+                  <Image
+                    width={150}
+                    height={150}
+                    src="./profile.jpg"
+                    roundedCircle
+                    fluid
+                  />
+                </div>
+                <Profile />
+              </Col>
+            </Row>
           </Col>
         </Row>
         <hr />

@@ -8,7 +8,15 @@
   padding: 20px;
   text-align: center;
 }
-
+.profile {
+  position: absolute;
+  top: 600px;
+  left: 30%;
+  transform: translateX(-50%);
+  z-index: 1;
+  width: 200px;
+  height: 200px;
+}
 .profile-section h1 {
   margin-bottom: 20px;
 }
