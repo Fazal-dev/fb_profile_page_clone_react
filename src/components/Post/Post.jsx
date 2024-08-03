@@ -30,8 +30,7 @@ const Post = ({ post }) => {
             variant="primary"
             className="d-flex align-items-center btn-post"
           >
-            <i className="fas fa-thumbs-up mr-1"></i>
-            Like
+            <i className="fas fa-thumbs-up mr-2"></i> Like
           </Button>
 
           <Button
