@@ -14,7 +14,7 @@ function App() {
     <>
       <Header />
       <Container>
-        <Row className="justify-content-center mt-4">
+        <Row className="justify-content-center w-full">
           <Col xs={12} md={8} className="text-center">
             <Image src="./cover.jpg" fluid />
           </Col>
