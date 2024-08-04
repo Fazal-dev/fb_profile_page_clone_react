@@ -15,7 +15,7 @@ A Facebook profile page clone built using React, Vite, and React Bootstrap. This
 
 ## Demo
 
-Check out the live demo of the Facebook Profile Page Clone [here](https://your-demo-link.com).
+Check out the live demo of the Facebook Profile Page Clone [here](https://fb-profile-page-clone-react.vercel.app/).
 
 ## Features
 
