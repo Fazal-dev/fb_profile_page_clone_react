@@ -22,7 +22,7 @@ const Post = ({ post }) => {
             </Card.Subtitle>
           </div>
         </div>
-        <Card.Img variant="top" src={post.image} className="mb-2" />
+        <Card.Img variant="top" src={post.image} className="mb-2 mt-2" />
         <Card.Text>{post.content}</Card.Text>
         <hr />
         <div className="d-flex flex-wrap justify-content-between">

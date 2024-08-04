@@ -1,7 +1,7 @@
 import React from "react";
-import { Container, Row, Col, Card, Image } from "react-bootstrap";
-import Header from "./components/Header/Header";
+import { Container, Row, Col, Image, Card, Button } from "react-bootstrap";
 import "./App.css";
+import Header from "./components/Header/Header";
 import Photos from "./components/photos/Photos";
 import Intro from "./components/intro/Intro";
 import Featured from "./components/Featured/Featured";
@@ -13,7 +13,7 @@ function App() {
   return (
     <>
       <Header />
-      <Container className="mt-5">
+      <Container fluid="md" className="mt-5">
         <Row className="justify-content-center w-full">
           <Col xs={12} md={8} className="text-center">
             <Image src="./cover.jpg" fluid />
@@ -33,6 +33,7 @@ function App() {
                   roundedCircle
                   fluid
                 />
+                {/* profile */}
                 <Profile />
               </Col>
             </Row>
@@ -41,7 +42,6 @@ function App() {
         <hr />
         {/* navigation tab start */}
         <Nav_tab />
-        {/* navigation tab end */}
 
         <Container>
           <Row className="mt-4 justify-content-center">
@@ -60,6 +60,20 @@ function App() {
               <Photos />
             </Col>
             <Col md={6}>
+              <Card className="mb-3 ">
+                <Card.Body className="p-3">
+                  <Row className="d-flex justify-content-between align-items-center">
+                    <Col xs="auto">
+                      <strong>Post</strong>
+                    </Col>
+                    <Col xs="auto">
+                      <Button variant="primary" className="btn-primary">
+                        <i class="fa-solid fa-filter"></i> filter
+                      </Button>
+                    </Col>
+                  </Row>
+                </Card.Body>
+              </Card>
               {/* posts */}
               <PostList />
             </Col>
