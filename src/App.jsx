@@ -68,7 +68,7 @@ function App() {
                     </Col>
                     <Col xs="auto">
                       <Button variant="primary" className="btn-primary">
-                        <i class="fa-solid fa-filter"></i> filter
+                        <i className="fa-solid fa-filter"></i> filter
                       </Button>
                     </Col>
                   </Row>

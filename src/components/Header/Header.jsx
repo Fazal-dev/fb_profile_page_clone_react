@@ -50,7 +50,7 @@ const Header = () => {
                 <i className="fa-solid fa-gamepad"></i>
               </Nav.Link>
               <div className="ml-auto icons">
-                <i class="fa-solid fa-bars mx-2 icon"></i>
+                <i className="fa-solid fa-bars mx-2 icon"></i>
                 <i className="fa-solid fa-bell mx-2 icon"></i>
                 <i className="fa-brands fa-facebook-messenger mx-2 icon"></i>
                 <i className="fa-solid fa-user mx-2 icon"></i>
