@@ -38,7 +38,7 @@ Check out the live demo of the Facebook Profile Page Clone [here](https://fb-pro
 
    ```bash
    git clone https://github.com/Fazal-dev/fb_profile_page_clone_react.git
-   cd facebook-profile-clone
+   cd fb_profile_page_clone_react
    ```
 
 2. Install dependencies:
